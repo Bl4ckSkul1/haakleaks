@@ -1,0 +1,64 @@
+# HaakLeaks — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env.local
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.tox/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# HaakLeaks output files (reports)
+*.haakleaks.json
+haakleaks_report_*.json
+haakleaks_report_*.html
+*_findings.json
+*_report.html
+
+# Sensitive test data (never commit real artifacts)
+tests/fixtures/real_*.pcap
+tests/fixtures/real_*.apk
+tests/fixtures/real_*.bin
+tests/fixtures/*.pem
+tests/fixtures/*.key
+tests/fixtures/*.env
+
+# Docker artifacts
+*.tar
+docker_tmp/
+
+# Misc
+*.log
+*.tmp
+*.bak
+.haakleaks_cache/

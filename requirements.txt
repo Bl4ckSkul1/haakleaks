@@ -1,0 +1,7 @@
+# HaakLeaks — Runtime dependencies
+# Only ONE hard dependency.
+
+requests>=2.28.0
+
+# Optional: install for richer PCAP TCP reassembly support
+# dpkt>=1.9.8
